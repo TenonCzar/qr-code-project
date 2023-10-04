@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  text-align: center;
+  background-color: hsl(212, 45%, 89%);
+}
+
+.hero {
+  justify-content: center;
+}
+
+.white {
+  background-color: white;
+  width: 270px;
+  height: 430px;
+  align-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  border-radius: 15px;
+}
+
+.qr {
+  /*     background-color: blue; */
+  position: relative;
+  bottom: 34.5rem;
+}
+
+.qr img {
+  width: 20rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.writeup {
+  /*     background-color: red; */
+  font-size: medium;
+  position: relative;
+  bottom: 34rem;
+  text-align: center;
+}
+
+.writeup p {
+  padding-top: 10px;
+  color: hsl(220, 15%, 55%);
+}
+/* || SMALL SIZE */
+@media screen and (min-width: 375px) {
+  .white {
+    min-width: 300px;
+    height: 37rem;
+  }
+  .qr {
+    position: relative;
+    bottom: 35.5rem;
+  }
+  .qr img {
+    width: 22rem;
+  }
+  .writeup {
+    position: relative;
+    bottom: 35rem;
+  }
+}
+
+/* || MEDIUM SIZE */
+@media screen and (min-width: 768px) {
+  .white {
+    height: 39rem;
+  }
+  .qr {
+    position: relative;
+    bottom: 37.77rem;
+  }
+  .writeup {
+    position: relative;
+    bottom: 37rem;
+  }
+  .writeup p {
+    font-size: 13px;
+  }
+}
+/* || LARGE */
+@media screen and (min-width: 992px) {
+  .writeup h2 {
+    font-size: 1.79rem;
+  }
+  .writeup p {
+    font-size: 1.2rem;
+  }
+}
+/* || EXTRA LARGE */
+@media screen and (min-width: 1020px) {
+  .writeup h2 {
+    font-size: 1.77rem;
+  }
+  .writeup p {
+    font-size: 1.2rem;
+  }
+}
+/* || LANDSCAPE */
+@media screen and (max-height: 1020px) and (min-aspect-ratio: 7/4) {
+  .writeup h2 {
+    font-size: 1.6rem;
+  }
+  .writeup p {
+    font-size: 1.2rem;
+  }
+}
